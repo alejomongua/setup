@@ -34,10 +34,10 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone --recursive git@github.com:alejomongua/dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.bashrc_custom .
-ln -sf dotfiles/.emacs.d .
+git clone git@github.com:alejomongua/dotfiles.git .dotfiles
+ln -sb .dotfiles/.screenrc .
+ln -sb .dotfiles/.bash_profile .
+ln -sb .dotfiles/.bashrc .
+ln -sb .dotfiles/.bashrc_custom .
+ln -sf .dotfiles/.emacs.d .
 
